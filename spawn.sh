@@ -1,5 +1,4 @@
 cur_path=$(pwd)
-cd "${cur_path%FDMMLS*}/FDMMLS"
 cd ./backend/
 
 command_start="sh "

@@ -186,10 +186,6 @@ EOF
 openTab(){
     command_start=$1
     command=$2
-    if [ $command_start == "bash" ] 
-    then
-        gnome-terminal -x bash -c "$command; exec bash"
-    else
-        newtab $command
-    fi
+    chmod +x $command
+    git-bash -c $command
 }
